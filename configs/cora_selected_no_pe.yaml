@@ -15,7 +15,7 @@ hidden_dim: null
 inductive_fraction: 0.0
 inductive_pe: error
 kernel: gaussian
-kernel_reduction: sum
+kernel_reduction: mean
 layers: 2
 lr: 0.005
 method: kmp
