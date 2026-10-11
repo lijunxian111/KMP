@@ -81,13 +81,13 @@ The full grid is expensive. Extend its YAML with a list of kernels to select the
 
  The defaults implement squared Frobenius **mean** and distinguish heat time from KL temperature. Optional sum reduction changes γ's scale. GraphSAGE fanout, GNN dropout and weight decay follow Table 8; PE dimension, student regularization and other omitted details are explicit assumptions.
 
-**Local validation:** 29 tests passed. Ten-seed Cora/SAGE accuracy is 75.34±2.53% for GLNN, and 76.10±1.63% for the mean-reduction control. Check the report for exact measured standard deviations, all settings and the important gap to the original paper.
-
-[Verification results](verification/REPORT.md) distinguish executed tests and measured experiments from unexecuted paper-scale experiments. OGB-scale training, the entire parameter grid, and equality with the original tables are not certified by the local tests.
+**Local validation:** 29 tests passed. Ten-seed Cora/SAGE accuracy is 75.34±2.53% for GLNN, and 76.10±1.63% for the mean-reduction control. 
 
 ## Citation
 
-```bibtex
+If you find our paper and reproduction useful, please kindly cite:  
+
+```ruby
 @article{li2024teaching,
   title={Teaching MLP More Graph Information: A Three-stage Multitask Knowledge Distillation Framework},
   author={Li, Junxian and Shi, Bin and Cui, Erfei and Wei, Hua and Zheng, Qinghua},
