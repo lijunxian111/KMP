@@ -46,7 +46,7 @@ python -m kmp --dataset Cora --inductive-fraction .2 --output runs/cora_inductiv
 python -m kmp --dataset Cora --kernel reverse --kernel-reduction mean --output runs/cora_reverse
 ```
 
-Each seed saves configuration, split indices, teacher/student checkpoints, frozen teacher targets, optional PE, validation histories and measured metrics. Existing run directories are not overwritten. `summary.json` reports mean test accuracy in percent and sample standard deviation. A single seed has no standard-deviation estimate.
+Each seed saves configuration, split indices, teacher/student checkpoints, frozen teacher targets, optional PE, validation histories and measured metrics. A single seed has no standard-deviation estimate.
 
 Supported node datasets: `Cora`, `Citeseer`, `Pubmed`, `Photo`, `Computers`, `ogbn-arxiv`, `ogbn-products`. OGB downloads can be large. Large-graph teachers are restricted to sampled SAGE; GCN/GAT do not silently fall back to incorrect local normalization. SAGE requires no optional compiled sampling libraries; the portable CSR sampler prioritizes correctness over throughput.
 
