@@ -1,0 +1,26 @@
+{
+  "seed": 0,
+  "dataset": "Cora",
+  "method": "kmp",
+  "teacher": "gcn",
+  "kernel": "gaussian",
+  "pe_dim": 0,
+  "teacher_val_accuracy": 0.24761904776096344,
+  "student_val_accuracy": 0.18095238506793976,
+  "observed_test_accuracy": 0.09287531673908234,
+  "inductive_test_accuracy": null,
+  "teacher_observed_test_accuracy": 0.11916878819465637,
+  "elapsed_seconds": 0.13350595900556073,
+  "pe": null,
+  "counts": {
+    "observed": 2708,
+    "train": 140,
+    "val": 210,
+    "observed_test": 2358,
+    "heldout": 0
+  },
+  "versions": {
+    "torch": "2.14.1",
+    "numpy": "2.5.4"
+  }
+}

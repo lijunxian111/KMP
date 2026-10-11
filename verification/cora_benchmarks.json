@@ -1,0 +1,3197 @@
+{
+  "default_glnn": {
+    "summary": {
+      "metric": "observed_test_accuracy",
+      "runs": 10,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "mean_percent": 75.34351170063019,
+      "std_percent": 2.529975203564036,
+      "std_convention": "sample (ddof=1)",
+      "config": {
+        "dataset": "Cora",
+        "teacher": "sage",
+        "method": "glnn",
+        "kernel": "gaussian",
+        "kernel_reduction": "sum",
+        "pe_dim": 0,
+        "pe_fusion": "concat",
+        "inductive_fraction": 0.0,
+        "inductive_pe": "error",
+        "split_protocol": "random",
+        "train_per_class": 20,
+        "val_per_class": 30,
+        "epochs": 1000,
+        "patience": 50,
+        "batch_size": 512,
+        "hidden_dim": null,
+        "layers": 2,
+        "dropout": null,
+        "weight_decay": null,
+        "batch_norm": false,
+        "student_dropout": 0.0,
+        "student_weight_decay": 0.0,
+        "fanout": 5,
+        "heads": 3,
+        "attention_dropout": 0.6,
+        "lr": 0.01,
+        "theta": 0.5,
+        "gamma": 0.1,
+        "temperature": 1.0,
+        "heat_time": 1.0,
+        "degree": 2,
+        "offset": 1.0,
+        "random_terms": 8,
+        "random_dim": 64,
+        "threads": 1,
+        "device": "cpu",
+        "data_root": "work/data",
+        "output": "work/benchmark/glnn"
+      },
+      "status": "Measured reconstruction results; not original author results"
+    },
+    "runs": [
+      {
+        "seed": 0,
+        "dataset": "Cora",
+        "method": "glnn",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.8428571224212646,
+        "student_val_accuracy": 0.8380952477455139,
+        "observed_test_accuracy": 0.7684478163719177,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7739610075950623,
+        "elapsed_seconds": 3.4033143339911476,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 1,
+        "dataset": "Cora",
+        "method": "glnn",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.8238095045089722,
+        "student_val_accuracy": 0.8380952477455139,
+        "observed_test_accuracy": 0.7565733790397644,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.754028856754303,
+        "elapsed_seconds": 5.364600417029578,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 2,
+        "dataset": "Cora",
+        "method": "glnn",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.8285714387893677,
+        "student_val_accuracy": 0.8333333134651184,
+        "observed_test_accuracy": 0.7722646594047546,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7748091816902161,
+        "elapsed_seconds": 4.106134166999254,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 3,
+        "dataset": "Cora",
+        "method": "glnn",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.7476190328598022,
+        "student_val_accuracy": 0.7857142686843872,
+        "observed_test_accuracy": 0.7480915784835815,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7616624236106873,
+        "elapsed_seconds": 3.4441392500302754,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 4,
+        "dataset": "Cora",
+        "method": "glnn",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.8238095045089722,
+        "student_val_accuracy": 0.8333333134651184,
+        "observed_test_accuracy": 0.7731128334999084,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7760814428329468,
+        "elapsed_seconds": 6.321095958002843,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 5,
+        "dataset": "Cora",
+        "method": "glnn",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.7904762029647827,
+        "student_val_accuracy": 0.7952380776405334,
+        "observed_test_accuracy": 0.7722646594047546,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7790500521659851,
+        "elapsed_seconds": 4.606437666981947,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 6,
+        "dataset": "Cora",
+        "method": "glnn",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.7714285850524902,
+        "student_val_accuracy": 0.776190459728241,
+        "observed_test_accuracy": 0.7603901624679565,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7646310329437256,
+        "elapsed_seconds": 4.468510375008918,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 7,
+        "dataset": "Cora",
+        "method": "glnn",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.7809523940086365,
+        "student_val_accuracy": 0.7809523940086365,
+        "observed_test_accuracy": 0.7663273811340332,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7659032940864563,
+        "elapsed_seconds": 3.9564479169785045,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 8,
+        "dataset": "Cora",
+        "method": "glnn",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.776190459728241,
+        "student_val_accuracy": 0.7285714149475098,
+        "observed_test_accuracy": 0.7001696228981018,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7612383365631104,
+        "elapsed_seconds": 3.151637207949534,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 9,
+        "dataset": "Cora",
+        "method": "glnn",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.800000011920929,
+        "student_val_accuracy": 0.8095238208770752,
+        "observed_test_accuracy": 0.7167090773582458,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7192535996437073,
+        "elapsed_seconds": 5.26096491701901,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      }
+    ]
+  },
+  "default_kmp": {
+    "summary": {
+      "metric": "observed_test_accuracy",
+      "runs": 10,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "mean_percent": 71.8320620059967,
+      "std_percent": 1.812510275806099,
+      "std_convention": "sample (ddof=1)",
+      "config": {
+        "dataset": "Cora",
+        "teacher": "sage",
+        "method": "kmp",
+        "kernel": "gaussian",
+        "kernel_reduction": "sum",
+        "pe_dim": 0,
+        "pe_fusion": "concat",
+        "inductive_fraction": 0.0,
+        "inductive_pe": "error",
+        "split_protocol": "random",
+        "train_per_class": 20,
+        "val_per_class": 30,
+        "epochs": 1000,
+        "patience": 50,
+        "batch_size": 512,
+        "hidden_dim": null,
+        "layers": 2,
+        "dropout": null,
+        "weight_decay": null,
+        "batch_norm": false,
+        "student_dropout": 0.0,
+        "student_weight_decay": 0.0,
+        "fanout": 5,
+        "heads": 3,
+        "attention_dropout": 0.6,
+        "lr": 0.01,
+        "theta": 0.5,
+        "gamma": 0.1,
+        "temperature": 1.0,
+        "heat_time": 1.0,
+        "degree": 2,
+        "offset": 1.0,
+        "random_terms": 8,
+        "random_dim": 64,
+        "threads": 1,
+        "device": "cpu",
+        "data_root": "work/data",
+        "output": "work/benchmark/kmp"
+      },
+      "status": "Measured reconstruction results; not original author results"
+    },
+    "runs": [
+      {
+        "seed": 0,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.8428571224212646,
+        "student_val_accuracy": 0.8142856955528259,
+        "observed_test_accuracy": 0.7184054255485535,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7739610075950623,
+        "elapsed_seconds": 5.294188040948939,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 1,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.8238095045089722,
+        "student_val_accuracy": 0.7571428418159485,
+        "observed_test_accuracy": 0.7192535996437073,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.754028856754303,
+        "elapsed_seconds": 5.172756542044226,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 2,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.8285714387893677,
+        "student_val_accuracy": 0.7523809671401978,
+        "observed_test_accuracy": 0.7332485318183899,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7748091816902161,
+        "elapsed_seconds": 4.777272915991489,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 3,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.7476190328598022,
+        "student_val_accuracy": 0.7333333492279053,
+        "observed_test_accuracy": 0.7175572514533997,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7616624236106873,
+        "elapsed_seconds": 5.397234041010961,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 4,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.8238095045089722,
+        "student_val_accuracy": 0.8142856955528259,
+        "observed_test_accuracy": 0.7383375763893127,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7760814428329468,
+        "elapsed_seconds": 8.432396749965847,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 5,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.7904762029647827,
+        "student_val_accuracy": 0.7714285850524902,
+        "observed_test_accuracy": 0.7362171411514282,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7790500521659851,
+        "elapsed_seconds": 8.872316333989147,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 6,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.7714285850524902,
+        "student_val_accuracy": 0.7571428418159485,
+        "observed_test_accuracy": 0.7090755105018616,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7646310329437256,
+        "elapsed_seconds": 3.9751225000363775,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 7,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.7809523940086365,
+        "student_val_accuracy": 0.7476190328598022,
+        "observed_test_accuracy": 0.732824444770813,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7659032940864563,
+        "elapsed_seconds": 4.868228541978169,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 8,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.776190459728241,
+        "student_val_accuracy": 0.7333333492279053,
+        "observed_test_accuracy": 0.6916878819465637,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7612383365631104,
+        "elapsed_seconds": 3.8202151249861345,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 9,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.800000011920929,
+        "student_val_accuracy": 0.7333333492279053,
+        "observed_test_accuracy": 0.6865988373756409,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7192535996437073,
+        "elapsed_seconds": 3.4279440420214087,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      }
+    ]
+  },
+  "default_mlp": {
+    "summary": {
+      "metric": "observed_test_accuracy",
+      "runs": 10,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "mean_percent": 51.12383395433426,
+      "std_percent": 1.8166357453050321,
+      "std_convention": "sample (ddof=1)",
+      "config": {
+        "dataset": "Cora",
+        "teacher": "sage",
+        "method": "mlp",
+        "kernel": "gaussian",
+        "kernel_reduction": "sum",
+        "pe_dim": 0,
+        "pe_fusion": "concat",
+        "inductive_fraction": 0.0,
+        "inductive_pe": "error",
+        "split_protocol": "random",
+        "train_per_class": 20,
+        "val_per_class": 30,
+        "epochs": 1000,
+        "patience": 50,
+        "batch_size": 512,
+        "hidden_dim": null,
+        "layers": 2,
+        "dropout": null,
+        "weight_decay": null,
+        "batch_norm": false,
+        "student_dropout": 0.0,
+        "student_weight_decay": 0.0,
+        "fanout": 5,
+        "heads": 3,
+        "attention_dropout": 0.6,
+        "lr": 0.01,
+        "theta": 0.5,
+        "gamma": 0.1,
+        "temperature": 1.0,
+        "heat_time": 1.0,
+        "degree": 2,
+        "offset": 1.0,
+        "random_terms": 8,
+        "random_dim": 64,
+        "threads": 1,
+        "device": "cpu",
+        "data_root": "work/data",
+        "output": "work/benchmark/mlp"
+      },
+      "status": "Measured reconstruction results; not original author results"
+    },
+    "runs": [
+      {
+        "seed": 0,
+        "dataset": "Cora",
+        "method": "mlp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": null,
+        "student_val_accuracy": 0.6000000238418579,
+        "observed_test_accuracy": 0.508905827999115,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": null,
+        "elapsed_seconds": 0.20830658299382776,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 1,
+        "dataset": "Cora",
+        "method": "mlp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": null,
+        "student_val_accuracy": 0.523809552192688,
+        "observed_test_accuracy": 0.5050890445709229,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": null,
+        "elapsed_seconds": 0.16426891594892368,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 2,
+        "dataset": "Cora",
+        "method": "mlp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": null,
+        "student_val_accuracy": 0.5571428537368774,
+        "observed_test_accuracy": 0.5114504098892212,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": null,
+        "elapsed_seconds": 0.17692129197530448,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 3,
+        "dataset": "Cora",
+        "method": "mlp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": null,
+        "student_val_accuracy": 0.561904788017273,
+        "observed_test_accuracy": 0.5016963481903076,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": null,
+        "elapsed_seconds": 0.18356704199686646,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 4,
+        "dataset": "Cora",
+        "method": "mlp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": null,
+        "student_val_accuracy": 0.5809524059295654,
+        "observed_test_accuracy": 0.5258693695068359,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": null,
+        "elapsed_seconds": 0.16773691697744653,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 5,
+        "dataset": "Cora",
+        "method": "mlp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": null,
+        "student_val_accuracy": 0.5142857432365417,
+        "observed_test_accuracy": 0.554707407951355,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": null,
+        "elapsed_seconds": 0.18152566702337936,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 6,
+        "dataset": "Cora",
+        "method": "mlp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": null,
+        "student_val_accuracy": 0.5857142806053162,
+        "observed_test_accuracy": 0.5139949321746826,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": null,
+        "elapsed_seconds": 0.1986190000316128,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 7,
+        "dataset": "Cora",
+        "method": "mlp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": null,
+        "student_val_accuracy": 0.5285714268684387,
+        "observed_test_accuracy": 0.4889737069606781,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": null,
+        "elapsed_seconds": 0.16753058397443965,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 8,
+        "dataset": "Cora",
+        "method": "mlp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": null,
+        "student_val_accuracy": 0.5809524059295654,
+        "observed_test_accuracy": 0.5033926963806152,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": null,
+        "elapsed_seconds": 0.22781479102559388,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 9,
+        "dataset": "Cora",
+        "method": "mlp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": null,
+        "student_val_accuracy": 0.5476190447807312,
+        "observed_test_accuracy": 0.4983036518096924,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": null,
+        "elapsed_seconds": 0.16379529098048806,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      }
+    ]
+  },
+  "default_pe": {
+    "summary": {
+      "metric": "observed_test_accuracy",
+      "runs": 10,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "mean_percent": 72.71416425704956,
+      "std_percent": 2.6035468231160666,
+      "std_convention": "sample (ddof=1)",
+      "config": {
+        "dataset": "Cora",
+        "teacher": "sage",
+        "method": "kmp",
+        "kernel": "gaussian",
+        "kernel_reduction": "sum",
+        "pe_dim": 16,
+        "pe_fusion": "concat",
+        "inductive_fraction": 0.0,
+        "inductive_pe": "error",
+        "split_protocol": "random",
+        "train_per_class": 20,
+        "val_per_class": 30,
+        "epochs": 1000,
+        "patience": 50,
+        "batch_size": 512,
+        "hidden_dim": null,
+        "layers": 2,
+        "dropout": null,
+        "weight_decay": null,
+        "batch_norm": false,
+        "student_dropout": 0.0,
+        "student_weight_decay": 0.0,
+        "fanout": 5,
+        "heads": 3,
+        "attention_dropout": 0.6,
+        "lr": 0.01,
+        "theta": 0.5,
+        "gamma": 0.1,
+        "temperature": 1.0,
+        "heat_time": 1.0,
+        "degree": 2,
+        "offset": 1.0,
+        "random_terms": 8,
+        "random_dim": 64,
+        "threads": 1,
+        "device": "cpu",
+        "data_root": "work/data",
+        "output": "work/benchmark/pe"
+      },
+      "status": "Measured reconstruction results; not original author results"
+    },
+    "runs": [
+      {
+        "seed": 0,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.8428571224212646,
+        "student_val_accuracy": 0.800000011920929,
+        "observed_test_accuracy": 0.7141645550727844,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7739610075950623,
+        "elapsed_seconds": 6.531814792018849,
+        "pe": {
+          "eigenvalues": [
+            0.004784004810517945,
+            0.007434751029535222,
+            0.008626230687250477,
+            0.017506541035157013,
+            0.017807830870488338,
+            0.019681889241409446,
+            0.019899057601554245,
+            0.02171493571689052,
+            0.022813377734009738,
+            0.02355671401181059,
+            0.02597810528117855,
+            0.0329537711626903,
+            0.03564197796908031,
+            0.036474566720102325,
+            0.03828599546597724,
+            0.03969524727221321
+          ],
+          "max_residual": 2.167439499255487e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 1,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.8238095045089722,
+        "student_val_accuracy": 0.776190459728241,
+        "observed_test_accuracy": 0.7421543598175049,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.754028856754303,
+        "elapsed_seconds": 11.558013750007376,
+        "pe": {
+          "eigenvalues": [
+            0.0047840048105181245,
+            0.007434751029535321,
+            0.008626230687250701,
+            0.01750654103515709,
+            0.01780783087048889,
+            0.01968188924140977,
+            0.019899057601554578,
+            0.021714935716890506,
+            0.0228133777340095,
+            0.02355671401181079,
+            0.025978105281178564,
+            0.03295377116268994,
+            0.035641977969081556,
+            0.036474566720102936,
+            0.03828599546597778,
+            0.039695247272213796
+          ],
+          "max_residual": 2.4192502598363772e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 2,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.8285714387893677,
+        "student_val_accuracy": 0.7666666507720947,
+        "observed_test_accuracy": 0.7463952302932739,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7748091816902161,
+        "elapsed_seconds": 9.516049707948696,
+        "pe": {
+          "eigenvalues": [
+            0.004784004810517795,
+            0.007434751029535015,
+            0.008626230687250722,
+            0.017506541035156923,
+            0.017807830870488997,
+            0.019681889241409758,
+            0.01989905760155442,
+            0.021714935716890822,
+            0.022813377734009432,
+            0.023556714011810708,
+            0.02597810528117886,
+            0.03295377116269031,
+            0.035641977969081085,
+            0.03647456672010292,
+            0.038285995465977815,
+            0.039695247272213886
+          ],
+          "max_residual": 2.212039352011065e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 3,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.7476190328598022,
+        "student_val_accuracy": 0.7190476059913635,
+        "observed_test_accuracy": 0.7565733790397644,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7616624236106873,
+        "elapsed_seconds": 9.531411291041877,
+        "pe": {
+          "eigenvalues": [
+            0.0047840048105178695,
+            0.007434751029535148,
+            0.008626230687250621,
+            0.01750654103515725,
+            0.01780783087048908,
+            0.019681889241410056,
+            0.01989905760155471,
+            0.02171493571689089,
+            0.02281337773400974,
+            0.02355671401181081,
+            0.025978105281178925,
+            0.03295377116268978,
+            0.03564197796908127,
+            0.036474566720102776,
+            0.0382859954659777,
+            0.039695247272213414
+          ],
+          "max_residual": 2.1222063027266544e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 4,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.8238095045089722,
+        "student_val_accuracy": 0.7571428418159485,
+        "observed_test_accuracy": 0.7383375763893127,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7760814428329468,
+        "elapsed_seconds": 10.639171457965858,
+        "pe": {
+          "eigenvalues": [
+            0.004784004810517525,
+            0.007434751029535426,
+            0.008626230687250498,
+            0.0175065410351568,
+            0.017807830870488626,
+            0.019681889241409754,
+            0.019899057601554172,
+            0.021714935716890562,
+            0.022813377734009644,
+            0.02355671401181032,
+            0.025978105281178644,
+            0.032953771162690125,
+            0.035641977969081265,
+            0.036474566720102776,
+            0.03828599546597769,
+            0.03969524727221345
+          ],
+          "max_residual": 2.3792787605414214e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 5,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.7904762029647827,
+        "student_val_accuracy": 0.738095223903656,
+        "observed_test_accuracy": 0.7209499478340149,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7790500521659851,
+        "elapsed_seconds": 8.04729637503624,
+        "pe": {
+          "eigenvalues": [
+            0.004784004810517571,
+            0.00743475102953524,
+            0.008626230687250526,
+            0.01750654103515691,
+            0.01780783087048907,
+            0.019681889241409633,
+            0.019899057601554505,
+            0.02171493571689062,
+            0.022813377734009623,
+            0.02355671401181072,
+            0.025978105281178797,
+            0.03295377116269029,
+            0.03564197796908129,
+            0.036474566720102825,
+            0.038285995465977544,
+            0.03969524727221382
+          ],
+          "max_residual": 2.236774463539688e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 6,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.7714285850524902,
+        "student_val_accuracy": 0.7428571581840515,
+        "observed_test_accuracy": 0.6959287524223328,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7646310329437256,
+        "elapsed_seconds": 5.238438167027198,
+        "pe": {
+          "eigenvalues": [
+            0.004784004810517773,
+            0.007434751029535185,
+            0.008626230687250117,
+            0.017506541035157124,
+            0.017807830870489157,
+            0.019681889241410195,
+            0.019899057601554665,
+            0.021714935716890996,
+            0.022813377734009637,
+            0.023556714011810937,
+            0.025978105281178568,
+            0.03295377116268997,
+            0.03564197796908082,
+            0.03647456672010309,
+            0.038285995465977524,
+            0.039695247272213505
+          ],
+          "max_residual": 2.255106607431987e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 7,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.7809523940086365,
+        "student_val_accuracy": 0.7333333492279053,
+        "observed_test_accuracy": 0.7646310329437256,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7659032940864563,
+        "elapsed_seconds": 6.250400083023123,
+        "pe": {
+          "eigenvalues": [
+            0.00478400481051808,
+            0.007434751029535244,
+            0.008626230687250025,
+            0.01750654103515725,
+            0.017807830870488775,
+            0.019681889241410053,
+            0.019899057601554464,
+            0.02171493571689093,
+            0.022813377734009446,
+            0.02355671401181074,
+            0.025978105281178936,
+            0.03295377116269004,
+            0.035641977969081064,
+            0.03647456672010268,
+            0.03828599546597789,
+            0.03969524727221338
+          ],
+          "max_residual": 2.477337888617245e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 8,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.776190459728241,
+        "student_val_accuracy": 0.7333333492279053,
+        "observed_test_accuracy": 0.6976251006126404,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7612383365631104,
+        "elapsed_seconds": 4.449977584008593,
+        "pe": {
+          "eigenvalues": [
+            0.004784004810517973,
+            0.007434751029535391,
+            0.008626230687250437,
+            0.017506541035156968,
+            0.017807830870488876,
+            0.01968188924140963,
+            0.019899057601554377,
+            0.021714935716890562,
+            0.0228133777340096,
+            0.023556714011810743,
+            0.02597810528117853,
+            0.032953771162690194,
+            0.035641977969081036,
+            0.03647456672010277,
+            0.038285995465978225,
+            0.03969524727221331
+          ],
+          "max_residual": 2.2710786503368476e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 9,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.800000011920929,
+        "student_val_accuracy": 0.7333333492279053,
+        "observed_test_accuracy": 0.694656491279602,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7192535996437073,
+        "elapsed_seconds": 4.524792125041131,
+        "pe": {
+          "eigenvalues": [
+            0.004784004810518359,
+            0.007434751029535099,
+            0.008626230687250795,
+            0.0175065410351573,
+            0.017807830870488404,
+            0.01968188924140912,
+            0.01989905760155463,
+            0.02171493571689104,
+            0.022813377734009984,
+            0.023556714011810934,
+            0.025978105281179286,
+            0.03295377116268985,
+            0.03564197796908124,
+            0.036474566720103054,
+            0.03828599546597762,
+            0.03969524727221359
+          ],
+          "max_residual": 2.3301769149321762e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      }
+    ]
+  },
+  "mean_kmp": {
+    "summary": {
+      "metric": "observed_test_accuracy",
+      "runs": 10,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "mean_percent": 76.10262989997864,
+      "std_percent": 1.6300604503173475,
+      "std_convention": "sample (ddof=1)",
+      "config": {
+        "dataset": "Cora",
+        "teacher": "sage",
+        "method": "kmp",
+        "kernel": "gaussian",
+        "kernel_reduction": "mean",
+        "pe_dim": 0,
+        "pe_fusion": "concat",
+        "inductive_fraction": 0.0,
+        "inductive_pe": "error",
+        "split_protocol": "random",
+        "train_per_class": 20,
+        "val_per_class": 30,
+        "epochs": 1000,
+        "patience": 50,
+        "batch_size": 512,
+        "hidden_dim": null,
+        "layers": 2,
+        "dropout": null,
+        "weight_decay": null,
+        "batch_norm": false,
+        "student_dropout": 0.0,
+        "student_weight_decay": 0.0,
+        "fanout": 5,
+        "heads": 3,
+        "attention_dropout": 0.6,
+        "lr": 0.01,
+        "teacher_lr": null,
+        "theta": 0.5,
+        "gamma": 0.1,
+        "temperature": 1.0,
+        "heat_time": 1.0,
+        "degree": 2,
+        "offset": 1.0,
+        "random_terms": 8,
+        "random_dim": 64,
+        "threads": 1,
+        "device": "cpu",
+        "data_root": "work/data",
+        "output": "work/benchmark/mean_kmp"
+      },
+      "status": "Measured reconstruction results; not original author results"
+    },
+    "runs": [
+      {
+        "seed": 0,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.8428571224212646,
+        "student_val_accuracy": 0.8428571224212646,
+        "observed_test_accuracy": 0.7709923386573792,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7739610075950623,
+        "elapsed_seconds": 4.078235167020466,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 1,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.8238095045089722,
+        "student_val_accuracy": 0.8428571224212646,
+        "observed_test_accuracy": 0.7527565956115723,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.754028856754303,
+        "elapsed_seconds": 6.599826249992475,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 2,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.8285714387893677,
+        "student_val_accuracy": 0.8428571224212646,
+        "observed_test_accuracy": 0.7777777910232544,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7748091816902161,
+        "elapsed_seconds": 8.538456709007733,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 3,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.7476190328598022,
+        "student_val_accuracy": 0.7809523940086365,
+        "observed_test_accuracy": 0.7667514681816101,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7616624236106873,
+        "elapsed_seconds": 5.132040917000268,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 4,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.8238095045089722,
+        "student_val_accuracy": 0.8333333134651184,
+        "observed_test_accuracy": 0.7731128334999084,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7760814428329468,
+        "elapsed_seconds": 7.355931584024802,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 5,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.7904762029647827,
+        "student_val_accuracy": 0.7952380776405334,
+        "observed_test_accuracy": 0.7743850946426392,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7790500521659851,
+        "elapsed_seconds": 6.145804458996281,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 6,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.7714285850524902,
+        "student_val_accuracy": 0.7857142686843872,
+        "observed_test_accuracy": 0.7506361603736877,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7646310329437256,
+        "elapsed_seconds": 6.847913749981672,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 7,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.7809523940086365,
+        "student_val_accuracy": 0.7809523940086365,
+        "observed_test_accuracy": 0.7591179013252258,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7659032940864563,
+        "elapsed_seconds": 5.690397916943766,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 8,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.776190459728241,
+        "student_val_accuracy": 0.7666666507720947,
+        "observed_test_accuracy": 0.7620865106582642,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7612383365631104,
+        "elapsed_seconds": 7.860314375022426,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 9,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.800000011920929,
+        "student_val_accuracy": 0.8142856955528259,
+        "observed_test_accuracy": 0.7226462960243225,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7192535996437073,
+        "elapsed_seconds": 7.0782085419632494,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      }
+    ]
+  },
+  "mean_pe": {
+    "summary": {
+      "metric": "observed_test_accuracy",
+      "runs": 10,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "mean_percent": 75.9626817703247,
+      "std_percent": 2.534126026581094,
+      "std_convention": "sample (ddof=1)",
+      "config": {
+        "dataset": "Cora",
+        "teacher": "sage",
+        "method": "kmp",
+        "kernel": "gaussian",
+        "kernel_reduction": "mean",
+        "pe_dim": 16,
+        "pe_fusion": "concat",
+        "inductive_fraction": 0.0,
+        "inductive_pe": "error",
+        "split_protocol": "random",
+        "train_per_class": 20,
+        "val_per_class": 30,
+        "epochs": 1000,
+        "patience": 50,
+        "batch_size": 512,
+        "hidden_dim": null,
+        "layers": 2,
+        "dropout": null,
+        "weight_decay": null,
+        "batch_norm": false,
+        "student_dropout": 0.0,
+        "student_weight_decay": 0.0,
+        "fanout": 5,
+        "heads": 3,
+        "attention_dropout": 0.6,
+        "lr": 0.01,
+        "teacher_lr": null,
+        "theta": 0.5,
+        "gamma": 0.1,
+        "temperature": 1.0,
+        "heat_time": 1.0,
+        "degree": 2,
+        "offset": 1.0,
+        "random_terms": 8,
+        "random_dim": 64,
+        "threads": 1,
+        "device": "cpu",
+        "data_root": "work/data",
+        "output": "work/benchmark/mean_pe"
+      },
+      "status": "Measured reconstruction results; not original author results"
+    },
+    "runs": [
+      {
+        "seed": 0,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.8428571224212646,
+        "student_val_accuracy": 0.8285714387893677,
+        "observed_test_accuracy": 0.758269727230072,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7739610075950623,
+        "elapsed_seconds": 7.108023041044362,
+        "pe": {
+          "eigenvalues": [
+            0.004784004810517945,
+            0.007434751029535222,
+            0.008626230687250477,
+            0.017506541035157013,
+            0.017807830870488338,
+            0.019681889241409446,
+            0.019899057601554245,
+            0.02171493571689052,
+            0.022813377734009738,
+            0.02355671401181059,
+            0.02597810528117855,
+            0.0329537711626903,
+            0.03564197796908031,
+            0.036474566720102325,
+            0.03828599546597724,
+            0.03969524727221321
+          ],
+          "max_residual": 2.167439499255487e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 1,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.8238095045089722,
+        "student_val_accuracy": 0.8142856955528259,
+        "observed_test_accuracy": 0.7553011178970337,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.754028856754303,
+        "elapsed_seconds": 6.595580667024478,
+        "pe": {
+          "eigenvalues": [
+            0.0047840048105181245,
+            0.007434751029535321,
+            0.008626230687250701,
+            0.01750654103515709,
+            0.01780783087048889,
+            0.01968188924140977,
+            0.019899057601554578,
+            0.021714935716890506,
+            0.0228133777340095,
+            0.02355671401181079,
+            0.025978105281178564,
+            0.03295377116268994,
+            0.035641977969081556,
+            0.036474566720102936,
+            0.03828599546597778,
+            0.039695247272213796
+          ],
+          "max_residual": 2.4192502598363772e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 2,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.8285714387893677,
+        "student_val_accuracy": 0.8095238208770752,
+        "observed_test_accuracy": 0.779474139213562,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7748091816902161,
+        "elapsed_seconds": 7.714667291031219,
+        "pe": {
+          "eigenvalues": [
+            0.004784004810517795,
+            0.007434751029535015,
+            0.008626230687250722,
+            0.017506541035156923,
+            0.017807830870488997,
+            0.019681889241409758,
+            0.01989905760155442,
+            0.021714935716890822,
+            0.022813377734009432,
+            0.023556714011810708,
+            0.02597810528117886,
+            0.03295377116269031,
+            0.035641977969081085,
+            0.03647456672010292,
+            0.038285995465977815,
+            0.039695247272213886
+          ],
+          "max_residual": 2.212039352011065e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 3,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.7476190328598022,
+        "student_val_accuracy": 0.761904776096344,
+        "observed_test_accuracy": 0.7739610075950623,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7616624236106873,
+        "elapsed_seconds": 6.587236332998145,
+        "pe": {
+          "eigenvalues": [
+            0.0047840048105178695,
+            0.007434751029535148,
+            0.008626230687250621,
+            0.01750654103515725,
+            0.01780783087048908,
+            0.019681889241410056,
+            0.01989905760155471,
+            0.02171493571689089,
+            0.02281337773400974,
+            0.02355671401181081,
+            0.025978105281178925,
+            0.03295377116268978,
+            0.03564197796908127,
+            0.036474566720102776,
+            0.0382859954659777,
+            0.039695247272213414
+          ],
+          "max_residual": 2.1222063027266544e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 4,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.8238095045089722,
+        "student_val_accuracy": 0.8476190567016602,
+        "observed_test_accuracy": 0.7765055298805237,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7760814428329468,
+        "elapsed_seconds": 11.720349624985829,
+        "pe": {
+          "eigenvalues": [
+            0.004784004810517525,
+            0.007434751029535426,
+            0.008626230687250498,
+            0.0175065410351568,
+            0.017807830870488626,
+            0.019681889241409754,
+            0.019899057601554172,
+            0.021714935716890562,
+            0.022813377734009644,
+            0.02355671401181032,
+            0.025978105281178644,
+            0.032953771162690125,
+            0.035641977969081265,
+            0.036474566720102776,
+            0.03828599546597769,
+            0.03969524727221345
+          ],
+          "max_residual": 2.3792787605414214e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 5,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.7904762029647827,
+        "student_val_accuracy": 0.7952380776405334,
+        "observed_test_accuracy": 0.7951654195785522,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7790500521659851,
+        "elapsed_seconds": 7.929761832987424,
+        "pe": {
+          "eigenvalues": [
+            0.004784004810517571,
+            0.00743475102953524,
+            0.008626230687250526,
+            0.01750654103515691,
+            0.01780783087048907,
+            0.019681889241409633,
+            0.019899057601554505,
+            0.02171493571689062,
+            0.022813377734009623,
+            0.02355671401181072,
+            0.025978105281178797,
+            0.03295377116269029,
+            0.03564197796908129,
+            0.036474566720102825,
+            0.038285995465977544,
+            0.03969524727221382
+          ],
+          "max_residual": 2.236774463539688e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 6,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.7714285850524902,
+        "student_val_accuracy": 0.699999988079071,
+        "observed_test_accuracy": 0.7391857504844666,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7646310329437256,
+        "elapsed_seconds": 5.702797624981031,
+        "pe": {
+          "eigenvalues": [
+            0.004784004810517773,
+            0.007434751029535185,
+            0.008626230687250117,
+            0.017506541035157124,
+            0.017807830870489157,
+            0.019681889241410195,
+            0.019899057601554665,
+            0.021714935716890996,
+            0.022813377734009637,
+            0.023556714011810937,
+            0.025978105281178568,
+            0.03295377116268997,
+            0.03564197796908082,
+            0.03647456672010309,
+            0.038285995465977524,
+            0.039695247272213505
+          ],
+          "max_residual": 2.255106607431987e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 7,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.7809523940086365,
+        "student_val_accuracy": 0.800000011920929,
+        "observed_test_accuracy": 0.7735369205474854,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7659032940864563,
+        "elapsed_seconds": 5.10267599998042,
+        "pe": {
+          "eigenvalues": [
+            0.00478400481051808,
+            0.007434751029535244,
+            0.008626230687250025,
+            0.01750654103515725,
+            0.017807830870488775,
+            0.019681889241410053,
+            0.019899057601554464,
+            0.02171493571689093,
+            0.022813377734009446,
+            0.02355671401181074,
+            0.025978105281178936,
+            0.03295377116269004,
+            0.035641977969081064,
+            0.03647456672010268,
+            0.03828599546597789,
+            0.03969524727221338
+          ],
+          "max_residual": 2.477337888617245e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 8,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.776190459728241,
+        "student_val_accuracy": 0.7428571581840515,
+        "observed_test_accuracy": 0.7332485318183899,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7612383365631104,
+        "elapsed_seconds": 3.455473208974581,
+        "pe": {
+          "eigenvalues": [
+            0.004784004810517973,
+            0.007434751029535391,
+            0.008626230687250437,
+            0.017506541035156968,
+            0.017807830870488876,
+            0.01968188924140963,
+            0.019899057601554377,
+            0.021714935716890562,
+            0.0228133777340096,
+            0.023556714011810743,
+            0.02597810528117853,
+            0.032953771162690194,
+            0.035641977969081036,
+            0.03647456672010277,
+            0.038285995465978225,
+            0.03969524727221331
+          ],
+          "max_residual": 2.2710786503368476e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 9,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.800000011920929,
+        "student_val_accuracy": 0.7904762029647827,
+        "observed_test_accuracy": 0.711620032787323,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7192535996437073,
+        "elapsed_seconds": 7.186986999993678,
+        "pe": {
+          "eigenvalues": [
+            0.004784004810518359,
+            0.007434751029535099,
+            0.008626230687250795,
+            0.0175065410351573,
+            0.017807830870488404,
+            0.01968188924140912,
+            0.01989905760155463,
+            0.02171493571689104,
+            0.022813377734009984,
+            0.023556714011810934,
+            0.025978105281179286,
+            0.03295377116268985,
+            0.03564197796908124,
+            0.036474566720103054,
+            0.03828599546597762,
+            0.03969524727221359
+          ],
+          "max_residual": 2.3301769149321762e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      }
+    ]
+  },
+  "tuned_kmp": {
+    "summary": {
+      "metric": "observed_test_accuracy",
+      "runs": 10,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "mean_percent": 71.46310448646545,
+      "std_percent": 1.8258736458547808,
+      "std_convention": "sample (ddof=1)",
+      "config": {
+        "dataset": "Cora",
+        "teacher": "sage",
+        "method": "kmp",
+        "kernel": "gaussian",
+        "kernel_reduction": "sum",
+        "pe_dim": 0,
+        "pe_fusion": "concat",
+        "inductive_fraction": 0.0,
+        "inductive_pe": "error",
+        "split_protocol": "random",
+        "train_per_class": 20,
+        "val_per_class": 30,
+        "epochs": 1000,
+        "patience": 50,
+        "batch_size": 512,
+        "hidden_dim": null,
+        "layers": 2,
+        "dropout": null,
+        "weight_decay": null,
+        "batch_norm": false,
+        "student_dropout": 0.0,
+        "student_weight_decay": 0.0,
+        "fanout": 5,
+        "heads": 3,
+        "attention_dropout": 0.6,
+        "lr": 0.005,
+        "teacher_lr": null,
+        "theta": 0.5,
+        "gamma": 0.3,
+        "temperature": 1.0,
+        "heat_time": 1.0,
+        "degree": 2,
+        "offset": 1.0,
+        "random_terms": 8,
+        "random_dim": 64,
+        "threads": 1,
+        "device": "cpu",
+        "data_root": "work/data",
+        "output": "work/benchmark/tuned_kmp"
+      },
+      "status": "Measured reconstruction results; not original author results"
+    },
+    "runs": [
+      {
+        "seed": 0,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.8476190567016602,
+        "student_val_accuracy": 0.8238095045089722,
+        "observed_test_accuracy": 0.7184054255485535,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7726887464523315,
+        "elapsed_seconds": 4.979234583035577,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 1,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.8333333134651184,
+        "student_val_accuracy": 0.7571428418159485,
+        "observed_test_accuracy": 0.716284990310669,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7536047697067261,
+        "elapsed_seconds": 6.238645874953363,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 2,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.8333333134651184,
+        "student_val_accuracy": 0.7571428418159485,
+        "observed_test_accuracy": 0.7362171411514282,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7726887464523315,
+        "elapsed_seconds": 6.288051374955103,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 3,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.7428571581840515,
+        "student_val_accuracy": 0.7666666507720947,
+        "observed_test_accuracy": 0.7230703830718994,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7625105977058411,
+        "elapsed_seconds": 8.622720499988645,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 4,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.8190476298332214,
+        "student_val_accuracy": 0.7904762029647827,
+        "observed_test_accuracy": 0.7217981219291687,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7569974660873413,
+        "elapsed_seconds": 5.782973708992358,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 5,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.7857142686843872,
+        "student_val_accuracy": 0.7571428418159485,
+        "observed_test_accuracy": 0.7217981219291687,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7854113578796387,
+        "elapsed_seconds": 10.158136291021947,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 6,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.7714285850524902,
+        "student_val_accuracy": 0.761904776096344,
+        "observed_test_accuracy": 0.7124682068824768,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7625105977058411,
+        "elapsed_seconds": 4.8646540000336245,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 7,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.7714285850524902,
+        "student_val_accuracy": 0.7428571581840515,
+        "observed_test_accuracy": 0.7307040095329285,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7705682516098022,
+        "elapsed_seconds": 6.739695957978256,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 8,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.776190459728241,
+        "student_val_accuracy": 0.7333333492279053,
+        "observed_test_accuracy": 0.6878710985183716,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7603901624679565,
+        "elapsed_seconds": 6.990160417044535,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 9,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 0,
+        "teacher_val_accuracy": 0.8047618865966797,
+        "student_val_accuracy": 0.7285714149475098,
+        "observed_test_accuracy": 0.6776929497718811,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.715860903263092,
+        "elapsed_seconds": 6.7065337499952875,
+        "pe": null,
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      }
+    ]
+  },
+  "tuned_pe": {
+    "summary": {
+      "metric": "observed_test_accuracy",
+      "runs": 10,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "mean_percent": 72.4554717540741,
+      "std_percent": 2.7088034692180867,
+      "std_convention": "sample (ddof=1)",
+      "config": {
+        "dataset": "Cora",
+        "teacher": "sage",
+        "method": "kmp",
+        "kernel": "gaussian",
+        "kernel_reduction": "sum",
+        "pe_dim": 16,
+        "pe_fusion": "concat",
+        "inductive_fraction": 0.0,
+        "inductive_pe": "error",
+        "split_protocol": "random",
+        "train_per_class": 20,
+        "val_per_class": 30,
+        "epochs": 1000,
+        "patience": 50,
+        "batch_size": 512,
+        "hidden_dim": null,
+        "layers": 2,
+        "dropout": null,
+        "weight_decay": null,
+        "batch_norm": false,
+        "student_dropout": 0.0,
+        "student_weight_decay": 0.0,
+        "fanout": 5,
+        "heads": 3,
+        "attention_dropout": 0.6,
+        "lr": 0.01,
+        "theta": 0.5,
+        "gamma": 0.3,
+        "temperature": 1.0,
+        "heat_time": 1.0,
+        "degree": 2,
+        "offset": 1.0,
+        "random_terms": 8,
+        "random_dim": 64,
+        "threads": 1,
+        "device": "cpu",
+        "data_root": "work/data",
+        "output": "work/benchmark/tuned_pe"
+      },
+      "status": "Measured reconstruction results; not original author results"
+    },
+    "runs": [
+      {
+        "seed": 0,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.8428571224212646,
+        "student_val_accuracy": 0.8238095045089722,
+        "observed_test_accuracy": 0.7391857504844666,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7739610075950623,
+        "elapsed_seconds": 9.888229499978479,
+        "pe": {
+          "eigenvalues": [
+            0.004784004810517945,
+            0.007434751029535222,
+            0.008626230687250477,
+            0.017506541035157013,
+            0.017807830870488338,
+            0.019681889241409446,
+            0.019899057601554245,
+            0.02171493571689052,
+            0.022813377734009738,
+            0.02355671401181059,
+            0.02597810528117855,
+            0.0329537711626903,
+            0.03564197796908031,
+            0.036474566720102325,
+            0.03828599546597724,
+            0.03969524727221321
+          ],
+          "max_residual": 2.167439499255487e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 1,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.8238095045089722,
+        "student_val_accuracy": 0.776190459728241,
+        "observed_test_accuracy": 0.7234944701194763,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.754028856754303,
+        "elapsed_seconds": 9.420416791981552,
+        "pe": {
+          "eigenvalues": [
+            0.0047840048105181245,
+            0.007434751029535321,
+            0.008626230687250701,
+            0.01750654103515709,
+            0.01780783087048889,
+            0.01968188924140977,
+            0.019899057601554578,
+            0.021714935716890506,
+            0.0228133777340095,
+            0.02355671401181079,
+            0.025978105281178564,
+            0.03295377116268994,
+            0.035641977969081556,
+            0.036474566720102936,
+            0.03828599546597778,
+            0.039695247272213796
+          ],
+          "max_residual": 2.4192502598363772e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 2,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.8285714387893677,
+        "student_val_accuracy": 0.7571428418159485,
+        "observed_test_accuracy": 0.6933842301368713,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7748091816902161,
+        "elapsed_seconds": 8.520968249998987,
+        "pe": {
+          "eigenvalues": [
+            0.004784004810517795,
+            0.007434751029535015,
+            0.008626230687250722,
+            0.017506541035156923,
+            0.017807830870488997,
+            0.019681889241409758,
+            0.01989905760155442,
+            0.021714935716890822,
+            0.022813377734009432,
+            0.023556714011810708,
+            0.02597810528117886,
+            0.03295377116269031,
+            0.035641977969081085,
+            0.03647456672010292,
+            0.038285995465977815,
+            0.039695247272213886
+          ],
+          "max_residual": 2.212039352011065e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 3,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.7476190328598022,
+        "student_val_accuracy": 0.7333333492279053,
+        "observed_test_accuracy": 0.6963528394699097,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7616624236106873,
+        "elapsed_seconds": 9.141770499991253,
+        "pe": {
+          "eigenvalues": [
+            0.0047840048105178695,
+            0.007434751029535148,
+            0.008626230687250621,
+            0.01750654103515725,
+            0.01780783087048908,
+            0.019681889241410056,
+            0.01989905760155471,
+            0.02171493571689089,
+            0.02281337773400974,
+            0.02355671401181081,
+            0.025978105281178925,
+            0.03295377116268978,
+            0.03564197796908127,
+            0.036474566720102776,
+            0.0382859954659777,
+            0.039695247272213414
+          ],
+          "max_residual": 2.1222063027266544e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 4,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.8238095045089722,
+        "student_val_accuracy": 0.7809523940086365,
+        "observed_test_accuracy": 0.7760814428329468,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7760814428329468,
+        "elapsed_seconds": 10.881391417002305,
+        "pe": {
+          "eigenvalues": [
+            0.004784004810517525,
+            0.007434751029535426,
+            0.008626230687250498,
+            0.0175065410351568,
+            0.017807830870488626,
+            0.019681889241409754,
+            0.019899057601554172,
+            0.021714935716890562,
+            0.022813377734009644,
+            0.02355671401181032,
+            0.025978105281178644,
+            0.032953771162690125,
+            0.035641977969081265,
+            0.036474566720102776,
+            0.03828599546597769,
+            0.03969524727221345
+          ],
+          "max_residual": 2.3792787605414214e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 5,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.7904762029647827,
+        "student_val_accuracy": 0.7333333492279053,
+        "observed_test_accuracy": 0.6938083171844482,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7790500521659851,
+        "elapsed_seconds": 9.695645458006766,
+        "pe": {
+          "eigenvalues": [
+            0.004784004810517571,
+            0.00743475102953524,
+            0.008626230687250526,
+            0.01750654103515691,
+            0.01780783087048907,
+            0.019681889241409633,
+            0.019899057601554505,
+            0.02171493571689062,
+            0.022813377734009623,
+            0.02355671401181072,
+            0.025978105281178797,
+            0.03295377116269029,
+            0.03564197796908129,
+            0.036474566720102825,
+            0.038285995465977544,
+            0.03969524727221382
+          ],
+          "max_residual": 2.236774463539688e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 6,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.7714285850524902,
+        "student_val_accuracy": 0.7476190328598022,
+        "observed_test_accuracy": 0.7315521836280823,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7646310329437256,
+        "elapsed_seconds": 6.058630333980545,
+        "pe": {
+          "eigenvalues": [
+            0.004784004810517773,
+            0.007434751029535185,
+            0.008626230687250117,
+            0.017506541035157124,
+            0.017807830870489157,
+            0.019681889241410195,
+            0.019899057601554665,
+            0.021714935716890996,
+            0.022813377734009637,
+            0.023556714011810937,
+            0.025978105281178568,
+            0.03295377116268997,
+            0.03564197796908082,
+            0.03647456672010309,
+            0.038285995465977524,
+            0.039695247272213505
+          ],
+          "max_residual": 2.255106607431987e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 7,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.7809523940086365,
+        "student_val_accuracy": 0.7476190328598022,
+        "observed_test_accuracy": 0.7510602474212646,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7659032940864563,
+        "elapsed_seconds": 10.100762791000307,
+        "pe": {
+          "eigenvalues": [
+            0.00478400481051808,
+            0.007434751029535244,
+            0.008626230687250025,
+            0.01750654103515725,
+            0.017807830870488775,
+            0.019681889241410053,
+            0.019899057601554464,
+            0.02171493571689093,
+            0.022813377734009446,
+            0.02355671401181074,
+            0.025978105281178936,
+            0.03295377116269004,
+            0.035641977969081064,
+            0.03647456672010268,
+            0.03828599546597789,
+            0.03969524727221338
+          ],
+          "max_residual": 2.477337888617245e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 8,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.776190459728241,
+        "student_val_accuracy": 0.738095223903656,
+        "observed_test_accuracy": 0.7311280965805054,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7612383365631104,
+        "elapsed_seconds": 7.707888374978211,
+        "pe": {
+          "eigenvalues": [
+            0.004784004810517973,
+            0.007434751029535391,
+            0.008626230687250437,
+            0.017506541035156968,
+            0.017807830870488876,
+            0.01968188924140963,
+            0.019899057601554377,
+            0.021714935716890562,
+            0.0228133777340096,
+            0.023556714011810743,
+            0.02597810528117853,
+            0.032953771162690194,
+            0.035641977969081036,
+            0.03647456672010277,
+            0.038285995465978225,
+            0.03969524727221331
+          ],
+          "max_residual": 2.2710786503368476e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      },
+      {
+        "seed": 9,
+        "dataset": "Cora",
+        "method": "kmp",
+        "teacher": "sage",
+        "kernel": "gaussian",
+        "pe_dim": 16,
+        "teacher_val_accuracy": 0.800000011920929,
+        "student_val_accuracy": 0.7476190328598022,
+        "observed_test_accuracy": 0.7094995975494385,
+        "inductive_test_accuracy": null,
+        "teacher_observed_test_accuracy": 0.7192535996437073,
+        "elapsed_seconds": 10.214386957988609,
+        "pe": {
+          "eigenvalues": [
+            0.004784004810518359,
+            0.007434751029535099,
+            0.008626230687250795,
+            0.0175065410351573,
+            0.017807830870488404,
+            0.01968188924140912,
+            0.01989905760155463,
+            0.02171493571689104,
+            0.022813377734009984,
+            0.023556714011810934,
+            0.025978105281179286,
+            0.03295377116268985,
+            0.03564197796908124,
+            0.036474566720103054,
+            0.03828599546597762,
+            0.03969524727221359
+          ],
+          "max_residual": 2.3301769149321762e-15
+        },
+        "counts": {
+          "observed": 2708,
+          "train": 140,
+          "val": 210,
+          "observed_test": 2358,
+          "heldout": 0
+        },
+        "versions": {
+          "torch": "2.14.1",
+          "numpy": "2.5.4"
+        }
+      }
+    ]
+  }
+}

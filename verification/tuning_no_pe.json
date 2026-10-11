@@ -1,0 +1,337 @@
+{
+  "best": {
+    "candidate": 4,
+    "params": {
+      "kernel": "gaussian",
+      "gamma": 0.3,
+      "lr": 0.005
+    },
+    "val_accuracy": 0.8238095045089722
+  },
+  "scores": [
+    {
+      "candidate": 0,
+      "params": {
+        "kernel": "gaussian",
+        "gamma": 0.1,
+        "lr": 0.01
+      },
+      "val_accuracy": 0.8142856955528259
+    },
+    {
+      "candidate": 1,
+      "params": {
+        "kernel": "gaussian",
+        "gamma": 0.1,
+        "lr": 0.005
+      },
+      "val_accuracy": 0.8190476298332214
+    },
+    {
+      "candidate": 2,
+      "params": {
+        "kernel": "gaussian",
+        "gamma": 0.1,
+        "lr": 0.001
+      },
+      "val_accuracy": 0.776190459728241
+    },
+    {
+      "candidate": 3,
+      "params": {
+        "kernel": "gaussian",
+        "gamma": 0.3,
+        "lr": 0.01
+      },
+      "val_accuracy": 0.8142856955528259
+    },
+    {
+      "candidate": 4,
+      "params": {
+        "kernel": "gaussian",
+        "gamma": 0.3,
+        "lr": 0.005
+      },
+      "val_accuracy": 0.8238095045089722
+    },
+    {
+      "candidate": 5,
+      "params": {
+        "kernel": "gaussian",
+        "gamma": 0.3,
+        "lr": 0.001
+      },
+      "val_accuracy": 0.7809523940086365
+    },
+    {
+      "candidate": 6,
+      "params": {
+        "kernel": "gaussian",
+        "gamma": 1.0,
+        "lr": 0.01
+      },
+      "val_accuracy": 0.8142856955528259
+    },
+    {
+      "candidate": 7,
+      "params": {
+        "kernel": "gaussian",
+        "gamma": 1.0,
+        "lr": 0.005
+      },
+      "val_accuracy": 0.8190476298332214
+    },
+    {
+      "candidate": 8,
+      "params": {
+        "kernel": "gaussian",
+        "gamma": 1.0,
+        "lr": 0.001
+      },
+      "val_accuracy": 0.7809523940086365
+    },
+    {
+      "candidate": 9,
+      "params": {
+        "kernel": "sigmoid",
+        "gamma": 0.1,
+        "lr": 0.01
+      },
+      "val_accuracy": 0.8095238208770752
+    },
+    {
+      "candidate": 10,
+      "params": {
+        "kernel": "sigmoid",
+        "gamma": 0.1,
+        "lr": 0.005
+      },
+      "val_accuracy": 0.7904762029647827
+    },
+    {
+      "candidate": 11,
+      "params": {
+        "kernel": "sigmoid",
+        "gamma": 0.1,
+        "lr": 0.001
+      },
+      "val_accuracy": 0.7666666507720947
+    },
+    {
+      "candidate": 12,
+      "params": {
+        "kernel": "sigmoid",
+        "gamma": 0.3,
+        "lr": 0.01
+      },
+      "val_accuracy": 0.8142856955528259
+    },
+    {
+      "candidate": 13,
+      "params": {
+        "kernel": "sigmoid",
+        "gamma": 0.3,
+        "lr": 0.005
+      },
+      "val_accuracy": 0.7571428418159485
+    },
+    {
+      "candidate": 14,
+      "params": {
+        "kernel": "sigmoid",
+        "gamma": 0.3,
+        "lr": 0.001
+      },
+      "val_accuracy": 0.761904776096344
+    },
+    {
+      "candidate": 15,
+      "params": {
+        "kernel": "sigmoid",
+        "gamma": 1.0,
+        "lr": 0.01
+      },
+      "val_accuracy": 0.7904762029647827
+    },
+    {
+      "candidate": 16,
+      "params": {
+        "kernel": "sigmoid",
+        "gamma": 1.0,
+        "lr": 0.005
+      },
+      "val_accuracy": 0.7714285850524902
+    },
+    {
+      "candidate": 17,
+      "params": {
+        "kernel": "sigmoid",
+        "gamma": 1.0,
+        "lr": 0.001
+      },
+      "val_accuracy": 0.699999988079071
+    },
+    {
+      "candidate": 18,
+      "params": {
+        "kernel": "polynomial",
+        "gamma": 0.1,
+        "lr": 0.01
+      },
+      "val_accuracy": 0.8238095045089722
+    },
+    {
+      "candidate": 19,
+      "params": {
+        "kernel": "polynomial",
+        "gamma": 0.1,
+        "lr": 0.005
+      },
+      "val_accuracy": 0.8047618865966797
+    },
+    {
+      "candidate": 20,
+      "params": {
+        "kernel": "polynomial",
+        "gamma": 0.1,
+        "lr": 0.001
+      },
+      "val_accuracy": 0.7904762029647827
+    },
+    {
+      "candidate": 21,
+      "params": {
+        "kernel": "polynomial",
+        "gamma": 0.3,
+        "lr": 0.01
+      },
+      "val_accuracy": 0.8238095045089722
+    },
+    {
+      "candidate": 22,
+      "params": {
+        "kernel": "polynomial",
+        "gamma": 0.3,
+        "lr": 0.005
+      },
+      "val_accuracy": 0.8047618865966797
+    },
+    {
+      "candidate": 23,
+      "params": {
+        "kernel": "polynomial",
+        "gamma": 0.3,
+        "lr": 0.001
+      },
+      "val_accuracy": 0.7904762029647827
+    },
+    {
+      "candidate": 24,
+      "params": {
+        "kernel": "polynomial",
+        "gamma": 1.0,
+        "lr": 0.01
+      },
+      "val_accuracy": 0.8238095045089722
+    },
+    {
+      "candidate": 25,
+      "params": {
+        "kernel": "polynomial",
+        "gamma": 1.0,
+        "lr": 0.005
+      },
+      "val_accuracy": 0.8047618865966797
+    },
+    {
+      "candidate": 26,
+      "params": {
+        "kernel": "polynomial",
+        "gamma": 1.0,
+        "lr": 0.001
+      },
+      "val_accuracy": 0.7904762029647827
+    },
+    {
+      "candidate": 27,
+      "params": {
+        "kernel": "randomized",
+        "gamma": 0.1,
+        "lr": 0.01
+      },
+      "val_accuracy": 0.8238095045089722
+    },
+    {
+      "candidate": 28,
+      "params": {
+        "kernel": "randomized",
+        "gamma": 0.1,
+        "lr": 0.005
+      },
+      "val_accuracy": 0.8190476298332214
+    },
+    {
+      "candidate": 29,
+      "params": {
+        "kernel": "randomized",
+        "gamma": 0.1,
+        "lr": 0.001
+      },
+      "val_accuracy": 0.8142856955528259
+    },
+    {
+      "candidate": 30,
+      "params": {
+        "kernel": "randomized",
+        "gamma": 0.3,
+        "lr": 0.01
+      },
+      "val_accuracy": 0.8238095045089722
+    },
+    {
+      "candidate": 31,
+      "params": {
+        "kernel": "randomized",
+        "gamma": 0.3,
+        "lr": 0.005
+      },
+      "val_accuracy": 0.8238095045089722
+    },
+    {
+      "candidate": 32,
+      "params": {
+        "kernel": "randomized",
+        "gamma": 0.3,
+        "lr": 0.001
+      },
+      "val_accuracy": 0.8142856955528259
+    },
+    {
+      "candidate": 33,
+      "params": {
+        "kernel": "randomized",
+        "gamma": 1.0,
+        "lr": 0.01
+      },
+      "val_accuracy": 0.8238095045089722
+    },
+    {
+      "candidate": 34,
+      "params": {
+        "kernel": "randomized",
+        "gamma": 1.0,
+        "lr": 0.005
+      },
+      "val_accuracy": 0.8238095045089722
+    },
+    {
+      "candidate": 35,
+      "params": {
+        "kernel": "randomized",
+        "gamma": 1.0,
+        "lr": 0.001
+      },
+      "val_accuracy": 0.8142856955528259
+    }
+  ]
+}
