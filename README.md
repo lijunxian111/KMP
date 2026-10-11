@@ -79,7 +79,7 @@ The full grid is expensive. Extend its YAML with a list of kernels to select the
 
 ## Verification and paper fidelity
 
-See [the correspondence and assumptions](docs/FAITHFULNESS.md) before interpreting results. The defaults implement squared Frobenius **sum** and distinguish heat time from KL temperature. Optional mean reduction changes γ's scale. GraphSAGE fanout, GNN dropout and weight decay follow Table 8; PE dimension, student regularization and other omitted details are explicit assumptions.
+ The defaults implement squared Frobenius **mean** and distinguish heat time from KL temperature. Optional sum reduction changes γ's scale. GraphSAGE fanout, GNN dropout and weight decay follow Table 8; PE dimension, student regularization and other omitted details are explicit assumptions.
 
 **Local validation:** 29 tests passed. Ten-seed Cora/SAGE accuracy is 75.34±2.53% for GLNN, and 76.10±1.63% for the mean-reduction control. Check the report for exact measured standard deviations, all settings and the important gap to the original paper.
 
