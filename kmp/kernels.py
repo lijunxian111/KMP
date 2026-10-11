@@ -42,7 +42,7 @@ class PairwiseKernel(nn.Module):
         return z @ z.T
 
 
-def matrix_distance(student, teacher, reduction="sum"):
+def matrix_distance(student, teacher, reduction="mean"):
     if student.shape != teacher.shape or student.ndim != 2:
         raise ValueError("Kernel matrices must have the same shape")
     if reduction not in {"sum", "mean"}:
