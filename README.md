@@ -1,6 +1,7 @@
 # KMP — Teaching MLP More Graph Information
 
-Official Paper-based reconstruction of **Teaching MLP More Graph Information: A Three-stage Multitask Knowledge Distillation Framework**, Junxian Li, Bin Shi, Erfei Cui, Hua Wei and Qinghua Zheng, [arXiv:2403.01079v1](https://arxiv.org/abs/2403.01079).
+Official Paper-based reconstruction of **Teaching MLP More Graph Information: A Three-stage Multitask Knowledge Distillation Framework**  
+**Junxian Li**, Bin Shi, Erfei Cui, Hua Wei and Qinghua Zheng, [arXiv:2403.01079v1](https://arxiv.org/abs/2403.01079).
 
 This implementation was rebuilt from the paper by codex. Missing details use documented GNN conventions. 
 
