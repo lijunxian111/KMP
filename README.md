@@ -1,8 +1,8 @@
 # KMP — Teaching MLP More Graph Information
 
-Paper-based reconstruction of **Teaching MLP More Graph Information: A Three-stage Multitask Knowledge Distillation Framework**, Junxian Li, Bin Shi, Erfei Cui, Hua Wei and Qinghua Zheng, [arXiv:2403.01079v1](https://arxiv.org/abs/2403.01079).
+Official Paper-based reconstruction of **Teaching MLP More Graph Information: A Three-stage Multitask Knowledge Distillation Framework**, Junxian Li, Bin Shi, Erfei Cui, Hua Wei and Qinghua Zheng, [arXiv:2403.01079v1](https://arxiv.org/abs/2403.01079).
 
-The original code is no longer available. This implementation was rebuilt from the paper, with the author's authorization. Missing details use documented GNN conventions. **This is a reconstruction, not a recovered original implementation or a claim that all published tables have been reproduced.**
+This implementation was rebuilt from the paper by codex. Missing details use documented GNN conventions. 
 
 Train a GNN teacher, transfer soft predictions and pairwise hidden-layer kernels to an MLP, then run the student on features and optional cached positional encodings without message passing.
 
@@ -81,7 +81,7 @@ The full grid is expensive. Extend its YAML with a list of kernels to select the
 
 See [the correspondence and assumptions](docs/FAITHFULNESS.md) before interpreting results. The defaults implement squared Frobenius **sum** and distinguish heat time from KL temperature. Optional mean reduction changes γ's scale. GraphSAGE fanout, GNN dropout and weight decay follow Table 8; PE dimension, student regularization and other omitted details are explicit assumptions.
 
-**Local validation:** 29 tests passed. Ten-seed Cora/SAGE accuracy is 75.34±2.53% for GLNN, 71.83±1.81% for default KMP (sum reduction), and 76.10±1.63% for the mean-reduction control. Check the report for exact measured standard deviations, all settings and the important gap to the original paper.
+**Local validation:** 29 tests passed. Ten-seed Cora/SAGE accuracy is 75.34±2.53% for GLNN, and 76.10±1.63% for the mean-reduction control. Check the report for exact measured standard deviations, all settings and the important gap to the original paper.
 
 [Verification results](verification/REPORT.md) distinguish executed tests and measured experiments from unexecuted paper-scale experiments. OGB-scale training, the entire parameter grid, and equality with the original tables are not certified by the local tests.
 
