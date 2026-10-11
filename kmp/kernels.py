@@ -51,7 +51,7 @@ def matrix_distance(student, teacher, reduction="mean"):
     return error.sum() if reduction == "sum" else error.mean()
 
 
-def hidden_loss(student_h, teacher_h, kernels, reduction="sum"):
+def hidden_loss(student_h, teacher_h, kernels, reduction="mean"):
     if not student_h or len(student_h) != len(teacher_h) or len(kernels) != len(student_h):
         raise ValueError("One shared kernel is required for each matched hidden layer")
     losses = []
