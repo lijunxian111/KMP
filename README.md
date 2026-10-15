@@ -3,7 +3,7 @@
 Official Paper-based reconstruction of **Teaching MLP More Graph Information: A Three-stage Multitask Knowledge Distillation Framework**  
 **[Junxian Li](https://lijunxian111.github.io/)**, [Bin Shi](https://gr.xjtu.edu.cn/shibin/), [Erfei Cui](https://scholar.google.com/citations?user=MRTB_-wAAAAJ&hl=en&oi=ao), [Hua Wei](https://scholar.google.com/citations?hl=en&user=F1CEAKwAAAAJ) and Qinghua Zheng, [arXiv:2403.01079v1](https://arxiv.org/abs/2403.01079).
 
-This implementation was rebuilt from the paper by codex. Missing details use documented GNN conventions. The initial version was done in 2023.06, and many details cannot be traced back after years. Feel so sorry about that.  
+This implementation was rebuilt from our paper by codex. Missing details use documented GNN conventions. The initial version was done in 2023.06, and many details cannot be traced back after years. We feel so sorry about that.  
 
 Train a GNN teacher, transfer soft predictions and pairwise hidden-layer kernels to an MLP, then run the student on features and optional cached positional encodings without message passing.
 
